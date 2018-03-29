@@ -11,12 +11,10 @@
     {% endif %}
 </div>
 <div class="post-tabs">
-    <ul class="nav nav-tabs">
-        <li{% if not show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_all') }}">All</a></li>
-        {% if current_user.is_authenticated %}
-        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_followed') }}">Followed</a></li>
-        {% endif %}
-    </ul>
+    <ul{% if not show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_all') }}"></a></ul>
+    {% if current_user.is_authenticated %}
+    <ul{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_followed') }}">Followed</a></ul>
+    {% endif %}
     {% include '_posts.html' %}
 </div>
 

@@ -1,39 +1,107 @@
-.profile-thumbnail {
+.posts {                  /*   .index .main   */
+    padding-top:30px;
+    padding-right:0
+}
+
+.posts ul {
+    position:relative;
+    width:100%;
+    margin:0 0 17px;
+    padding:0 2px 17px 0;
+    border-bottom:1px solid #f0f0f0;
+    word-wrap:break-word
+}
+
+.posts .avatar {
     position: absolute;
 }
-.profile-header {
-    min-height: 260px;
-    margin-left: 280px;
+
+.posts .content .cancel{
+    display:none
 }
-ul.posts {
-    list-style-type: none;
-    padding: 0px;
-    margin: 16px 0px 0px 0px;
-    border-top: 1px solid #e0e0e0;
+
+.posts .content:hover .cancel{
+    display:inline
 }
-ul.posts li.post {
-    padding: 8px;
-    border-bottom: 1px solid #e0e0e0;
+
+.posts .author{
+    margin-bottom:14px;
+    font-size:13px
 }
-ul.posts li.post:hover {
-    background-color: #f0f0f0;
+
+.posts .author-restyle{
+margin-bottom:0
 }
-div.post-date {
-    float: right;
+
+.posts .author .avatar{
+margin:0 5px 0 0
 }
-div.post-author {
-    font-weight: bold;
+
+.posts .author .info{
+    position:relative;
+    left: 30px
 }
-div.post-thumbnail {
-    position: absolute;
+
+.posts .author .avatar,.posts .author .info{
+display:inline-block;
+vertical-align:middle
 }
-div.post-content {
-    margin-left: 48px;
-    min-height: 48px;
+
+.posts .author .info .nickname{
+vertical-align:middle
 }
-div.post-footer {
-    text-align: right;
+
+
+
+.posts .author .info .badge-icon{
+width:15px;
+height:15px
 }
+
+.posts .author .info span{
+display:inline-block;
+padding-left:3px;
+color:#969696;
+vertical-align:middle
+}
+
+.posts .author a{
+color:#333
+}
+
+.posts .author a:hover{
+color:#2f2f2f
+}
+
+.posts .author .time{
+color:#969696
+}
+
+.posts .title{
+    margin:-7px 0 4px;
+    display:inherit;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.5
+}
+
+.posts .title:hover{
+    text-decoration:underline
+}
+
+.posts .title:visited{
+    color:#969696
+}
+
+.posts .title:empty:before{
+    content:"\65E0\9898"
+}
+
+
+
+
+
+
 div.pagination {
     width: 100%;
     text-align: right;
@@ -54,13 +122,12 @@ div.flask-pagedown-preview h2 {
 div.flask-pagedown-preview h3 {
     font-size: 120%;
 }
-.post-body h1 {
+.post-abstract h1 {
     font-size: 140%;
 }
-.post-body h2 {
+.post-abstract h2 {
     font-size: 130%;
 }
-.post-body h3 {
+.post-abstract h3 {
     font-size: 120%;
 }
-
